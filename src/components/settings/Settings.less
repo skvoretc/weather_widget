@@ -1,0 +1,75 @@
+.main_settings{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 405px;
+  justify-content: space-between;
+}
+.main_settings>div{
+  padding: 15px;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.title{
+  font-size: 19px;
+}
+.locations{
+  height: 300px;
+  overflow-y: scroll;
+}
+/* хром, сафари */
+.locations::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.locations { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.locations { overflow: -moz-scrollbars-none; }
+.location{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #eaeaea;
+  color: #555454;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+.location_name{
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 100px;
+}
+.location_name>svg{
+  cursor: grab;
+}
+.add_field{
+  display: flex;
+  flex-direction: column;
+}
+.enter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.location_input{
+  height: 22px;
+  padding: 6px;
+font-size: 16px;
+}
+
+.css-2b097c-container{
+  width: 200px;
+}

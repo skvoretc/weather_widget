@@ -1,0 +1,13 @@
+.main{
+  height: 500px;
+  width: 314px;
+  overflow-y: scroll;
+}
+/* хром, сафари */
+.main::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.main { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.main { overflow: -moz-scrollbars-none; }
